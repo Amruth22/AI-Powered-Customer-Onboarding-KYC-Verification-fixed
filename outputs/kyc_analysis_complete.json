@@ -1,6 +1,6 @@
 {
-  "package_id": "KYC_FLOW_20251015_122853",
-  "created_at": "2025-10-15T12:28:53.212481",
+  "package_id": "KYC_FLOW_20251015_124537",
+  "created_at": "2025-10-15T12:45:37.781040",
   "processing_method": "crewai_flow",
   "total_files": 1,
   "file_categories": {
@@ -29,10 +29,10 @@
   ],
   "flow_results": {
     "status": "completed",
-    "execution_time": 12.246577,
+    "execution_time": 11.156274,
     "metrics": {
-      "document_processing": 6.616024,
-      "kyc_extraction": 5.630553
+      "document_processing": 6.652885,
+      "kyc_extraction": 4.485859
     },
     "kyc_verification": {
       "documents_processed": 1,
