@@ -1,0 +1,60 @@
+{
+  "package_id": "KYC_FLOW_20251015_122853",
+  "created_at": "2025-10-15T12:28:53.212481",
+  "processing_method": "crewai_flow",
+  "total_files": 1,
+  "file_categories": {
+    "images": 0,
+    "documents": 1,
+    "other": 0
+  },
+  "categorized_files": {
+    "images": [],
+    "documents": [
+      "documents\\sample_kyc_document.txt"
+    ],
+    "other": []
+  },
+  "file_metadata": [
+    {
+      "file_name": "sample_kyc_document.txt",
+      "file_path": "documents\\sample_kyc_document.txt",
+      "file_size": 735,
+      "file_size_mb": 0.0,
+      "file_extension": ".txt",
+      "created_date": "2025-10-15T11:29:58.238904",
+      "modified_date": "2025-10-15T11:29:58.238904",
+      "file_type": "Text File"
+    }
+  ],
+  "flow_results": {
+    "status": "completed",
+    "execution_time": 12.246577,
+    "metrics": {
+      "document_processing": 6.616024,
+      "kyc_extraction": 5.630553
+    },
+    "kyc_verification": {
+      "documents_processed": 1,
+      "kyc_data": {
+        "parsed": true,
+        "source": "crew_result",
+        "data_points": 15
+      },
+      "risk_level": "LOW",
+      "compliance_status": "APPROVED",
+      "missing_fields": [
+        "full_name",
+        "date_of_birth",
+        "address",
+        "id_number",
+        "source_of_funds"
+      ],
+      "recommendation": "auto_approval"
+    }
+  },
+  "agents_used": [
+    "KYC Document Analysis Specialist"
+  ],
+  "package_status": "COMPLETED"
+}

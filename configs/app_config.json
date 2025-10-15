@@ -1,0 +1,24 @@
+{
+  "llm_config": {
+    "model": "gemini/gemini-2.0-flash",
+    "max_tokens": 3000,
+    "temperature": 0.0,
+    "timeout": 60
+  },
+  "kyc_config": {
+    "supported_document_types": [".pdf", ".txt", ".doc", ".docx"],
+    "supported_image_types": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff"],
+    "max_file_size_mb": 50,
+    "extraction_timeout": 120
+  },
+  "processing": {
+    "batch_size": 10,
+    "parallel_processing": false,
+    "retry_attempts": 3
+  },
+  "output": {
+    "save_metadata": true,
+    "save_analysis": true,
+    "output_format": "json"
+  }
+}
